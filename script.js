@@ -8,7 +8,7 @@ publicationList.innerHTML = window.publications.map(([year, category, title, aut
     <span class="pub-year">${year}</span>
     <div>
       <h3>${title}</h3>
-      <p>${authors} · ${journal}</p>
+      <p>${authors}, ${journal}</p>
     </div>
     <span class="arrow" aria-hidden="true">↗</span>
   </a>
