@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -16,217 +16,173 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <a class="skip-link" href="#conteudo" data-en="Skip to content" data-pt="Ir para o conteúdo">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Página inicial de Chrystian Pereira">
+    <a class="brand" href="#inicio" aria-label="Chrystian Pereira home" data-en-aria-label="Chrystian Pereira home" data-pt-aria-label="Página inicial de Chrystian Pereira">
       <span class="brand-mark" aria-hidden="true"></span>
       <span>Chrystian Pereira</span>
     </a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
-      <span></span><span></span><span></span><span class="sr-only">Menu</span>
-    </button>
-    <nav id="main-nav" class="nav" aria-label="Navegação principal">
-      <a href="#inicio" data-pt="Início" data-en="Home">Início</a>
-      <a href="#pesquisa" data-pt="Pesquisa" data-en="Research">Pesquisa</a>
-      <a href="#publicacoes" data-pt="Publicações" data-en="Publications">Publicações</a>
-      <a href="#trajetoria" data-pt="Trajetória" data-en="Career">Trajetória</a>
-      <a href="assets/ChrystianPereira_CV.pdf" target="_blank">CV</a>
-      <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+    <div class="header-actions">
+      <button class="lang-button" type="button" hidden aria-label="Switch language to Portuguese" title="Switch language to Portuguese" lang="pt-BR">PT</button>
+      <button class="menu-button" type="button" hidden aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav id="main-nav" class="nav" aria-label="Main navigation" data-en-aria-label="Main navigation" data-pt-aria-label="Navegação principal">
+      <a href="#inicio" data-pt="Início" data-en="Home">Home</a>
+      <a href="#pesquisa" data-pt="Pesquisa" data-en="Research">Research</a>
+      <a href="#publicacoes" data-pt="Publicações" data-en="Publications">Publications</a>
+      <a href="#trajetoria" data-pt="Trajetória" data-en="Career">Career</a>
+      <a href="assets/ChrystianPereira_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="#contato" data-pt="Contato" data-en="Contact">Contact</a>
     </nav>
   </header>
 
-  <main id="conteudo">
-    <section class="hero" id="inicio">
-      <img class="hero-image" src="assets/ocultacao-estelar-fotografica.png"
-        alt="Visualização fotográfica de um pequeno corpo irregular circundado por múltiplos anéis de partículas">
-      <div class="hero-shade"></div>
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/ocultacao-estelar-fotografica.png" width="1672" height="941" fetchpriority="high"
+        alt="Artistic illustration of an irregular small body surrounded by rings against a star field." data-en-alt="Artistic illustration of an irregular small body surrounded by rings against a star field." data-pt-alt="Ilustração artística de um pequeno corpo irregular cercado por anéis em um campo de estrelas.">
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content reveal">
         <p class="eyebrow" data-pt="Astrônomo · Astrofísica do Sistema Solar"
-          data-en="Astronomer · Solar System Astrophysics">Astrônomo · Astrofísica do Sistema Solar</p>
-        <h1 class="hero-name" data-pt="Dr. Chrystian Pereira" data-en="Chrystian Pereira, PhD">Dr. Chrystian Pereira</h1>
+          data-en="Astronomer · Solar System Astrophysics">Astronomer · Solar System Astrophysics</p>
+        <h1 class="hero-name" id="hero-title" data-pt="Dr. Chrystian Pereira" data-en="Chrystian Pereira, PhD">Chrystian Pereira, PhD</h1>
 
         <p class="hero-meta"
-        data-pt="Observatório Nacional (ON/MCTI) · Rio de Janeiro, Brasil" 
-        data-en="Observatório Nacional (ON/MCTI) · Rio de Janeiro, Brazil">
-          Observatório Nacional (ON/MCTI) · Rio de Janeiro, Brasil</p>
+        data-pt="Observatório Nacional (ON/MCTI) · Rio de Janeiro, Brasil"
+        data-en="Observatório Nacional (ON/MCTI) · Rio de Janeiro, Brazil">Observatório Nacional (ON/MCTI) · Rio de Janeiro, Brazil</p>
         <p class="hero-meta"
         data-pt="Laboratório Interinstitucional de e-Astronomia (LIneA) · Rio de Janeiro, Brasil"
-        data-en="Interinstitutional Laboratory for e-Astronomy (LIneA) · Rio de Janeiro, Brazil">
-          Institutional Laboratory for e-Astronomy (LIneA) · Rio de Janeiro, Brazil</p>
+        data-en="Interinstitutional Laboratory for e-Astronomy (LIneA) · Rio de Janeiro, Brazil">Interinstitutional Laboratory for e-Astronomy (LIneA) · Rio de Janeiro, Brazil</p>
         <p class="hero-intro"
           data-pt="Investigo pequenos corpos distantes e seus anéis usando o instante preciso em que eles ocultam a luz das estrelas."
-          data-en="I investigate distant small bodies and their rings using the precise instant when they occult a background star.">
-          I investigate distant small bodies and its rings using the precise instant when they occult a background star.</p>
-        <a class="text-link light" href="#pesquisa"><span data-pt="Conheça minha pesquisa"
-            data-en="Explore my research">Explore my research</span><span aria-hidden="true">↘</span></a>
+          data-en="I investigate distant small bodies and their rings using the precise instant when they occult a background star.">I investigate distant small bodies and their rings using the precise instant when they occult a background star.</p>
+        <div class="hero-links">
+          <a class="primary-button" href="#pesquisa"><span data-en="Explore my research" data-pt="Conheça minha pesquisa">Explore my research</span><span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#publicacoes"><span data-en="View publications" data-pt="Ver publicações">View publications</span><span aria-hidden="true">↓</span></a>
+        </div>
       </div>
-
+      <p class="hero-caption" data-en="Artistic illustration · Small body and rings" data-pt="Ilustração artística · Pequeno corpo e anéis">Artistic illustration · Small body and rings</p>
     </section>
 
     <section class="intro section-pad reveal" aria-labelledby="intro-title">
-      <p class="section-index" id="intro-title"
+      <h2 class="section-index" id="intro-title"
       data-pt="01 / SOBRE MIM"
-      data-en="01 / ABOUT ME">
-        01 / ABOUT ME</p>
-      <div>
-        <div class="intro-body">
+      data-en="01 / ABOUT ME">01 / ABOUT ME</h2>
+      <div class="intro-body">
         <div class="intro-copy">
-          <p 
-          data-pt="Sou um astrônomo brasileiro e pesquisador de pós-doutorado no 
-            Observatório Nacional, no Rio de Janeiro, Brasil. Minha pesquisa se concentra 
-            em ocultações estelares por Centauros e objetos transnetunianos, combinando 
-            campanhas observacionais, análise fotométrica e modelagem de curvas de luz para 
-            investigar as propriedades físicas de pequenos corpos do Sistema Solar e seus arredores. 
-            Possuo doutorado em Astronomia pelo Observatório Nacional, mestrado em Astronomia e 
-            Física pela Universidade Tecnológica Federal do Paraná (UTFPR) e bacharelado em Física 
-            pela Universidade Estadual de Ponta Grossa (UEPG)."
-
-          data-en="I am a Brazilian astronomer and postdoctoral researcher at the Observatório 
-            Nacional in Rio de Janeiro, Brazil. My research focuses on stellar occultations by 
-            Centaurs and trans-Neptunian objects, combining observational campaigns, photometric
-            analysis, and light-curve modelling to investigate the physical properties of small 
-            Solar System bodies and their surroundings. I hold a PhD in Astronomy from the Observatório 
-            Nacional, an MSc in Astronomy and Physics from Federal University of Technology - Paraná 
-            (UTFPR-CT), Brazil, and a BSc in Physics from Ponta Grossa State University (UEPG), Brazil.">
-
-            I am a Brazilian astronomer and postdoctoral researcher at the Observatório Nacional in 
-            Rio de Janeiro, Brazil. My research focuses on stellar occultations by Centaurs and 
-            trans-Neptunian objects, combining observational campaigns, photometric analysis, and 
-            light-curve modelling to investigate the physical properties of small Solar System bodies 
-            and their surroundings. I hold a PhD in Astronomy from the Observatório Nacional, an MSc 
-            in Astronomy and Physics from Tecnological Federal University - Paraná (UTFPR-CT), Brazil, 
-            and a BSc in Physics from Ponta Grossa State University (UEPG), Brazil.
-          </p>
-          <p 
-          data-pt="Liderei estudos internacionais sobre sistemas de anéis ao redor de pequenos 
-            corpos, incluindo a descoberta do segundo anel de Quaoar e a primeira observação do 
-            sistema de anéis em evolução ao redor de Chiron. Minha pesquisa de doutorado recebeu 
-            menção honrosa da Sociedade Astronômica Brasileira (SAB), e fui contemplado com a bolsa 
-            FAPERJ Nota 10. Em reconhecimento às minhas contribuições à astronomia planetária, a 
-            União Astronômica Internacional nomeou o asteroide (20276) Chrystianpereira em minha homenagem."
-
-          data-en="I have led international studies on ring systems around small bodies, 
-            including the discovery of Quaoar’s second ring and the first observation of the
-            evolving ring system around Chiron. My doctoral research received an honourable 
-            mention from the Brazilian Astronomical Society (SAB), and I was awarded the FAPERJ 
-            Nota 10 fellowship. In recognition of my contributions to planetary astronomy, the 
-            International Astronomical Union named asteroid (20276) Chrystianpereira in my honour.">
-            I have led international studies on ring systems around small bodies, including the discovery of Quaoar's 
-            second ring and the first observation of the evolving ring system around Chiron. My doctoral research 
-            received an honourable mention from the Brazilian Astronomical Society (SAB), and I was awarded the FAPERJ 
-            Nota 10 fellowship. In recognition of my contributions to planetary astronomy, the International Astronomical
-            Union named asteroid (20276) Chrystianpereira in my honour.
-          </p>
+          <p data-en="I am a Brazilian astronomer and postdoctoral researcher at the Observatório Nacional in Rio de Janeiro. I combine observational campaigns, photometry and light-curve modelling of stellar occultations to study Centaurs, trans-Neptunian objects and their surroundings."
+            data-pt="Sou astrônomo brasileiro e pesquisador de pós-doutorado no Observatório Nacional, no Rio de Janeiro. Combino campanhas observacionais, fotometria e modelagem de curvas de luz de ocultações estelares para estudar Centauros, objetos transnetunianos e seus arredores.">I am a Brazilian astronomer and postdoctoral researcher at the Observatório Nacional in Rio de Janeiro. I combine observational campaigns, photometry and light-curve modelling of stellar occultations to study Centaurs, trans-Neptunian objects and their surroundings.</p>
+          <p data-en="I led international studies that discovered Quaoar’s second ring and first observed Chiron’s evolving ring system. My doctoral work earned an honourable mention from the Brazilian Astronomical Society (SAB), and I received a FAPERJ Nota 10 fellowship. The International Astronomical Union named asteroid (20276) Chrystianpereira in recognition of my contributions to planetary astronomy."
+            data-pt="Liderei estudos internacionais que descobriram o segundo anel de Quaoar e observaram pela primeira vez o sistema de anéis em evolução de Chiron. Meu doutorado recebeu menção honrosa da Sociedade Astronômica Brasileira (SAB), e fui contemplado com a bolsa FAPERJ Nota 10. A União Astronômica Internacional nomeou o asteroide (20276) Chrystianpereira em reconhecimento às minhas contribuições à astronomia planetária.">I led international studies that discovered Quaoar’s second ring and first observed Chiron’s evolving ring system. My doctoral work earned an honourable mention from the Brazilian Astronomical Society (SAB), and I received a FAPERJ Nota 10 fellowship. The International Astronomical Union named asteroid (20276) Chrystianpereira in recognition of my contributions to planetary astronomy.</p>
+          <a class="text-link" href="#trajetoria"><span data-en="Education &amp; experience" data-pt="Formação &amp; atuação">Education &amp; experience</span><span aria-hidden="true">↓</span></a>
         </div>
         <figure class="intro-photo">
           <div class="intro-photo-frame">
-            <img src="assets/DSC_2820_48SAB.jpg"
-              alt="Chrystian Pereira durante a 48ª Reunião Anual da Sociedade Astronômica Brasileira. Photo: Wandeclayt M./Projeto Céu profundo">
+            <img src="assets/DSC_2820_48SAB.jpg" width="2200" height="1469" loading="lazy"
+              alt="Chrystian Pereira standing among attendees at the 48th Annual Meeting of the Brazilian Astronomical Society." data-en-alt="Chrystian Pereira standing among attendees at the 48th Annual Meeting of the Brazilian Astronomical Society." data-pt-alt="Chrystian Pereira em pé entre os participantes da 48ª Reunião Anual da Sociedade Astronômica Brasileira.">
           </div>
-          <figcaption>48ª Reunião Anual da Sociedade Astronômica Brasileira, 2025. Photo: Wandeclayt M./Projeto Céu profundo</figcaption>
+          <figcaption><span data-en="48th Annual Meeting of the Brazilian Astronomical Society, 2025." data-pt="48ª Reunião Anual da Sociedade Astronômica Brasileira, 2025.">48th Annual Meeting of the Brazilian Astronomical Society, 2025.</span> <span class="photo-credit" data-en="Photo: Wandeclayt M./Projeto Céu profundo" data-pt="Foto: Wandeclayt M./Projeto Céu profundo">Photo: Wandeclayt M./Projeto Céu profundo</span></figcaption>
         </figure>
-        </div>
       </div>
     </section>
 
     <section class="research section-pad" id="pesquisa" aria-labelledby="research-title">
-      <img class="construction-image" src="assets/pesquisa-em-construcao.png"
-        alt="Diagrama de um pequeno corpo rodeado por órbitas incompletas e pontos de observação">
-      <div class="construction-shade"></div>
       <div class="construction-content reveal">
-        <p class="section-index" data-pt="02 / PESQUISA" data-en="02 / RESEARCH">2 / RESEARCH</p>
+        <p class="section-index" data-pt="02 / PESQUISA" data-en="02 / RESEARCH">02 / RESEARCH</p>
         <p class="construction-status"><span aria-hidden="true"></span>
-          <span data-pt="Em desenvolvimento" data-en="Work in progress">Em desenvolvimento</span>
+          <span data-pt="Em desenvolvimento" data-en="Work in progress">Work in progress</span>
         </p>
-        <h2 id="research-title" data-pt="Em desenvolvimento." data-en="Work in progress.">
-          Work in progress.</h2>
+        <h2 id="research-title" data-pt="Em desenvolvimento." data-en="Work in progress.">Work in progress.</h2>
         <p class="construction-copy"
           data-pt="Estou preparando uma visão mais completa dos projetos, métodos e dados que orientam meu trabalho."
-          data-en="I am preparing a more complete view of the projects, methods and data behind my work.">
-          I am preparing a more complete view of the projects, methods and data behind my work.
-        </p>
+          data-en="I am preparing a more complete view of the projects, methods and data behind my work.">I am preparing a more complete view of the projects, methods and data behind my work.</p>
       </div>
+      <img class="construction-image" src="assets/pesquisa-em-construcao.png" width="1536" height="1024" loading="lazy"
+        alt="Construction illustration of a smiling ringed body wearing a blue hard hat and holding a lime wrench." data-en-alt="Construction illustration of a smiling ringed body wearing a blue hard hat and holding a lime wrench." data-pt-alt="Ilustração de um corpo com anéis sorrindo, usando capacete azul de obra e segurando uma chave verde-lima.">
     </section>
 
     <section class="publications section-pad" id="publicacoes" aria-labelledby="pub-title">
       <div class="section-head reveal">
         <p class="section-index"
-        data-pt="03 / PUBLICAÇÕES" 
+        data-pt="03 / PUBLICAÇÕES"
         data-en="03 / PUBLICATIONS">03 / PUBLICATIONS</p>
-        <div>
-          <h2 id="pub-title" 
-          data-pt="Trabalhos publicados" 
-          data-en="Published works">Published works</h2>
+        <h2 id="pub-title" data-pt="Trabalhos publicados" data-en="Published works">Published works</h2>
+      </div>
+      <section class="featured-studies" aria-labelledby="featured-title" hidden>
+        <h3 class="subheading" id="featured-title" data-en="Featured studies" data-pt="Estudos selecionados">Featured studies</h3>
+        <div class="featured-grid" id="featured-list"></div>
+      </section>
+      <div class="publication-browser" hidden>
+        <div class="publication-heading">
+          <h3 class="subheading" id="all-publications-title" data-en="All publications" data-pt="Todas as publicações">All publications</h3>
+          <p class="publication-results" id="publication-results" role="status" aria-live="polite" aria-atomic="true"></p>
         </div>
+        <div class="filters" role="group" aria-label="Filter publications" data-en-aria-label="Filter publications" data-pt-aria-label="Filtrar publicações">
+          <button type="button" class="filter" aria-pressed="true" aria-controls="publication-list"
+            data-filter="all" data-pt="Todos" data-en="All">All</button>
+          <button type="button" class="filter" aria-pressed="false" aria-controls="publication-list"
+            data-filter="rings" data-pt="Anéis" data-en="Rings">Rings</button>
+          <button type="button" class="filter" aria-pressed="false" aria-controls="publication-list"
+            data-filter="centaurs" data-pt="Centauros" data-en="Centaurs">Centaurs</button>
+          <button type="button" class="filter" aria-pressed="false" aria-controls="publication-list"
+            data-filter="transneptunian objects" data-pt="Objetos Transnetunianos" data-en="Transneptunian objects">Transneptunian objects</button>
+          <button type="button" class="filter" aria-pressed="false" aria-controls="publication-list"
+            data-filter="trojans" data-pt="Troianos" data-en="Trojans">Trojans</button>
+          <button type="button" class="filter" aria-pressed="false" aria-controls="publication-list"
+            data-filter="interstellar objects" data-pt="Objetos Interestelares" data-en="Interstellar objects">Interstellar objects</button>
+          <button type="button" class="filter" aria-pressed="false" aria-controls="publication-list"
+            data-filter="satellites" data-pt="Satélites" data-en="Satellites">Satellites</button>
+          <button type="button" class="filter" aria-pressed="false" aria-controls="publication-list"
+            data-filter="methods" data-pt="Métodos" data-en="Methods">Methods</button>
+        </div>
+        <div class="publication-list" id="publication-list" role="list" aria-labelledby="all-publications-title"></div>
+        <button class="outline-button publication-toggle" type="button" aria-expanded="false" aria-controls="publication-list" hidden>Show all</button>
       </div>
-      <div 
-      class="filters reveal" role="group" aria-label="Filtrar publicações">
-      <button class="filter active"
-      data-filter="all" data-pt="Todos" data-en="All">Todos</button>
-      <button class="filter" 
-      data-filter="rings" data-pt="Anéis" data-en="Rings">Anéis</button>
-      <button class="filter" 
-      data-filter="centaurs" data-pt="Centauros" data-en="Centaurs">Centauros</button>
-      <button class="filter" 
-      data-filter="transneptunian objects" data-pt="Objetos Transnetunianos" data-en="Transneptunian objects">Objetos Transnetunianos</button>
-      <button class="filter" 
-      data-filter="trojans" data-pt="Troianos" data-en="Trojans">Troianos</button>
-      <button class="filter" 
-      data-filter="interstellar objects" data-pt="Objetos Interestelares" data-en="Interstellar objects">Objetos Interestelares</button>
-      <button class="filter" 
-      data-filter="satellites" data-pt="Satélites" data-en="Satellites">Satélites</button>
-      <button class="filter" 
-      data-filter="methods" data-pt="Métodos" data-en="Methods">Métodos</button>
-    </div>
-      <div class="publication-list" id="publication-list">
-      </div>
-      <a class="outline-button reveal" href="https://scholar.google.com/citations?user=JpdV9XQAAAAJ&amp;hl=en"
-        target="_blank" rel="noopener"><span data-pt="Ver todas no Google Scholar"
-          data-en="View all on Google Scholar">Ver todas no Google Scholar</span><span aria-hidden="true">↗</span></a>
+      <!-- This link stays available even if either JavaScript file fails to load. -->
+      <a class="text-link scholar-link" href="https://scholar.google.com/citations?user=JpdV9XQAAAAJ&amp;hl=en" target="_blank" rel="noopener"><span data-en="View all on Google Scholar" data-pt="Ver todas no Google Scholar">View all on Google Scholar</span><span aria-hidden="true">↗</span></a>
     </section>
 
     <section class="timeline section-pad" id="trajetoria" aria-labelledby="timeline-title">
       <div class="section-head reveal">
-        <p class="section-index" data-pt="04 / TRAJETÓRIA" data-en="04 / CAREER">04 / TRAJETÓRIA</p>
-        <h2 id="timeline-title" data-pt="Formação &amp; atuação" data-en="Education &amp; experience">Formação &amp; atuação</h2>
+        <p class="section-index" data-pt="04 / TRAJETÓRIA" data-en="04 / CAREER">04 / CAREER</p>
+        <h2 id="timeline-title" data-pt="Formação &amp; atuação" data-en="Education &amp; experience">Education &amp; experience</h2>
       </div>
       <div class="timeline-grid">
-        <article class="timeline-item reveal"><time data-pt="2025 — agora" data-en="2025 — present">2025 — agora</time>
+        <article class="timeline-item reveal"><span class="timeline-date" data-pt="2025 — agora" data-en="2025 — present">2025 — present</span>
           <div>
-            <h3 data-pt="Pós-doutorado em Astronomia" data-en="Postdoctoral Research in Astronomy">Pós-doutorado em Astronomia</h3>
-            <p data-pt="Observatório Nacional · Bolsa Nota 10 FAPERJ" data-en="National Observatory · FAPERJ Nota 10 Fellowship">Observatório Nacional · Bolsa Nota 10 FAPERJ</p>
+            <h3 data-pt="Pós-doutorado em Astronomia" data-en="Postdoctoral Research in Astronomy">Postdoctoral Research in Astronomy</h3>
+            <p data-pt="Observatório Nacional · Bolsa Nota 10 FAPERJ" data-en="Observatório Nacional · FAPERJ Nota 10 Fellowship">Observatório Nacional · FAPERJ Nota 10 Fellowship</p>
           </div>
         </article>
-        <article class="timeline-item reveal"><time>2020 — 2024</time>
+        <article class="timeline-item reveal"><span class="timeline-date">2020 — 2024</span>
           <div>
-            <h3 data-pt="Doutorado em Astronomia" data-en="PhD in Astronomy">Doutorado em Astronomia</h3>
-            <p data-pt="Observatório Nacional · Tese com menção honrosa pela Sociedade Astronômica Brasileira" data-en="National Observatory · Thesis awarded an honorable mention by the Brazilian Astronomical Society">Observatório Nacional · Tese com menção honrosa pela Sociedade Astronômica Brasileira</p>
+            <h3 data-pt="Doutorado em Astronomia" data-en="PhD in Astronomy">PhD in Astronomy</h3>
+            <p data-pt="Observatório Nacional · Tese com menção honrosa pela Sociedade Astronômica Brasileira" data-en="Observatório Nacional · Thesis awarded an honorable mention by the Brazilian Astronomical Society">Observatório Nacional · Thesis awarded an honorable mention by the Brazilian Astronomical Society</p>
           </div>
         </article>
-        <article class="timeline-item reveal"><time>2018 — 2020</time>
+        <article class="timeline-item reveal"><span class="timeline-date">2018 — 2020</span>
           <div>
-            <h3 data-pt="Mestrado em Física e Astronomia" data-en="MSc in Physics and Astronomy">Mestrado em Física e Astronomia</h3>
-            <p data-pt="Universidade Tecnológica Federal do Paraná" data-en="Federal University of Technology - Paraná">Universidade Tecnológica Federal do Paraná</p>
+            <h3 data-pt="Mestrado em Física e Astronomia" data-en="MSc in Physics and Astronomy">MSc in Physics and Astronomy</h3>
+            <p data-pt="Universidade Tecnológica Federal do Paraná (UTFPR-CT), Brasil" data-en="Federal University of Technology - Paraná (UTFPR-CT), Brazil">Federal University of Technology - Paraná (UTFPR-CT), Brazil</p>
           </div>
         </article>
-        <article class="timeline-item reveal"><time>2010 — 2016</time>
+        <article class="timeline-item reveal"><span class="timeline-date">2010 — 2016</span>
           <div>
-            <h3 data-pt="Licenciatura em Física" data-en="Bachelor’s degree in Physics">Licenciatura em Física</h3>
-            <p data-pt="Universidade Estadual de Ponta Grossa" data-en="Ponta Grossa State University">Universidade Estadual de Ponta Grossa</p>
+            <h3 data-pt="Licenciatura em Física" data-en="Bachelor’s degree in Physics">Bachelor’s degree in Physics</h3>
+            <p data-pt="Universidade Estadual de Ponta Grossa (UEPG), Brasil" data-en="Ponta Grossa State University (UEPG), Brazil">Ponta Grossa State University (UEPG), Brazil</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="recognition section-pad reveal">
-      <div class="construction-content reveal">
-        <p class="section-index"
-          data-pt="05 / DESTAQUES" data-en="05 / HIGHLIGHTS">05 / DESTAQUES</p>
+    <section class="recognition section-pad reveal" aria-labelledby="highlights-title">
+      <p class="section-index" data-pt="05 / DESTAQUES" data-en="05 / HIGHLIGHTS">05 / HIGHLIGHTS</p>
+      <div class="construction-content">
         <p class="construction-status"><span aria-hidden="true"></span>
-          <span data-pt="Em desenvolvimento" data-en="Work in progress">Em desenvolvimento</span>
+          <span data-pt="Em desenvolvimento" data-en="Work in progress">Work in progress</span>
         </p>
-        <h2 id="research-title" data-pt="Em desenvolvimento." data-en="Work in progress.">
-          Work in progress.</h2>
+        <h2 id="highlights-title" data-pt="Em desenvolvimento." data-en="Work in progress.">Work in progress.</h2>
       </div>
     </section>
   </main>
@@ -234,26 +190,20 @@
   <footer id="contato">
     <div class="footer-top section-pad">
       <p class="section-index"
-        data-pt="06 / CONTATO" data-en="06 / CONTACT">06 / CONTATO</p>
+        data-pt="06 / CONTATO" data-en="06 / CONTACT">06 / CONTACT</p>
       <div>
-        <h2 data-pt="Vamos conversar!" data-en="Let's talk!">Vamos conversar!
-        </h2><a class="email" href="mailto:chrystianpereira@on.br">chrystianpereira@on.br <span>↗</span></a>
+        <h2 data-pt="Vamos conversar!" data-en="Let's talk!">Let's talk!</h2><a class="email" href="mailto:chrystianpereira@on.br">chrystianpereira@on.br <span aria-hidden="true">↗</span></a>
       </div>
     </div>
-    <div class="footer-bottom"><span>© <span id="year"></span> Chrystian Pereira</span>
-      <div><a href="assets/ChrystianPereira_CV.pdf" target="_blank">CV</a><a
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Chrystian Pereira</span>
+      <div class="footer-links"><a href="assets/ChrystianPereira_CV.pdf" target="_blank" rel="noopener">CV</a><a
           href="https://lattes.cnpq.br/6568362866565293" target="_blank" rel="noopener">Lattes</a><a
           href="https://orcid.org/0000-0003-1000-8113" target="_blank" rel="noopener">ORCID</a><a
           href="https://scholar.google.com/citations?user=JpdV9XQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a class="back-to-top" href="#inicio" title="Back to top" data-en-title="Back to top" data-pt-title="Voltar ao topo"><span data-en="Back to top" data-pt="Voltar ao topo">Back to top</span><span aria-hidden="true">↑</span></a>
       </div>
     </div>
   </footer>
-  <div class="floating-actions">
-    <button class="back-to-top" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">
-      <span aria-hidden="true">↑</span>
-    </button>
-    <button class="lang-button" type="button" aria-label="Mudar idioma para inglês">EN</button>
-  </div>
   <script src="publications.js"></script>
   <script src="script.js"></script>
 </body>
