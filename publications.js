@@ -3,6 +3,13 @@
 window.publications = [
   {
     "year": 2026,
+    "categories": ["rings"],
+    "title": "JWST stellar occultation reveals unexpected changes in Chariklo's ring system",
+    "authors": "Santos-Sanz, P., Gomes-Junior, A. R., Morgado, B., et al.",
+    "journal": "Science Advances",
+    "url": "http://dx.doi.org/10.1126/sciadv.aeh4794"
+  },{
+    "year": 2026,
     "categories": ["transneptunian objects"],
     "title": "Size, Shape, Density, and Atmospheric Limit of (50000) Quaoar Revealed from 14 years of Stellar Occultation",
     "authors": "Margoti, G., Braga-Ribas, F., Ortiz, J. L., et al.",
